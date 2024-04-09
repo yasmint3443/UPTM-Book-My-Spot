@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".BookingSummary">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/name_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/title_textview"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/name_label_textview"
+        android:layout_alignBaseline="@id/name_label_textview" />
+
+    <!-- Phone Number -->
+    <TextView
+        android:id="@+id/phone_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/name_label_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/phone_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/phone_label_textview"
+        android:layout_alignBaseline="@id/phone_label_textview" />
+
+    <!-- Total Pax -->
+    <TextView
+        android:id="@+id/pax_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pax: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/phone_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/pax_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/pax_label_textview"
+        android:layout_alignBaseline="@id/pax_label_textview" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/date_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/pax_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/date_label_textview"
+        android:layout_alignBaseline="@id/date_label_textview" />
+
+    <!-- Time Slot -->
+    <TextView
+        android:id="@+id/time_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Slot: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/date_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/time_label_textview"
+        android:layout_alignBaseline="@id/time_label_textview" />
+
+    <!-- Facility -->
+    <TextView
+        android:id="@+id/facility_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facility: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/time_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/facility_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/facility_label_textview"
+        android:layout_alignBaseline="@id/facility_label_textview" />
+
+    <!-- Booking ID -->
+    <TextView
+        android:id="@+id/booking_id_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking ID: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/facility_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/booking_id_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/booking_id_label_textview"
+        android:layout_alignBaseline="@id/booking_id_label_textview" />
+
+    <!-- User ID -->
+    <TextView
+        android:id="@+id/user_id_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/booking_id_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/user_id_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/user_id_label_textview"
+        android:layout_alignBaseline="@id/user_id_label_textview" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_id_textview"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/red"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel Booking" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCancel"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#003B73"
+        android:layout_centerHorizontal="true"
+        android:text="Home" />
+
+</RelativeLayout>

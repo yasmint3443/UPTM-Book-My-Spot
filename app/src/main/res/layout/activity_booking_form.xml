@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".BookingForm">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Booking Form"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp" />
+
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTV"
+        android:background="@drawable/lavender_border"
+        android:padding="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <!-- Phone Number EditText -->
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameET"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/lavender_border"
+        android:padding="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <!-- PAX EditText -->
+    <EditText
+        android:id="@+id/paxET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneET"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/lavender_border"
+        android:padding="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="PAX"
+        android:inputType="number" />
+
+    <!-- date-picker dialog-->
+    <Button
+        android:id="@+id/pickDateBtn"
+        android:text="Pick Date"
+        android:layout_below="@id/paxET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/lavender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickDateBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:text="Date: " />
+
+    <TextView
+        android:id="@+id/timeslotTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Please choose a time slot:" />
+
+    <Spinner
+        android:id="@+id/timeSlotSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lavender_border"
+        android:padding="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/timeslotTV"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Agree to Terms Checkbox -->
+    <CheckBox
+        android:id="@+id/agreeCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeSlotSpinner"
+        android:layout_marginTop="16dp"
+        android:text="Agree to Terms and Conditions" />
+
+    <!-- Terms and Conditions Link -->
+    <TextView
+        android:id="@+id/termsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agreeCB"
+        android:text="Terms and Conditions"
+        android:textColor="@color/blue"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- Confirm Booking Button -->
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/termsTV"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#003B73"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm Booking" />
+
+</RelativeLayout >

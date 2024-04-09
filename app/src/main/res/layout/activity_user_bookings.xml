@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".UserBookings">
+
+    <!-- RecyclerView to display user's bookings -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_user_bookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_add_new_booking"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="412dp" />
+
+    <!-- Add New Booking Button -->
+    <Button
+        android:id="@+id/btn_add_new_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Booking"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

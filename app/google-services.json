@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438237466597",
+    "project_id": "uptm-book-my-spot-c81c5",
+    "storage_bucket": "uptm-book-my-spot-c81c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438237466597:android:a2d808b921b819337e690c",
+        "android_client_info": {
+          "package_name": "com.example.uptmbookmyspot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA74fwP4DiYflEqnhSEw6M10TaY1NZJoN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
